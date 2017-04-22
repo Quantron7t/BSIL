@@ -17,7 +17,8 @@ namespace BusinessLayer
 
         public void Delete(int employeeId)
         {
-            throw new NotImplementedException();
+            AdoAccess aA = new AdoAccess();
+            aA.Delete(employeeId);
         }
 
         public List<Employee> Read()
